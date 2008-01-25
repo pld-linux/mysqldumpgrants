@@ -2,7 +2,7 @@
 Summary:	Dumps grants from a MySQL database as valid SQL
 Name:		mysqldumpgrants
 Version:	1.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications
 Source0:	http://forge.mysql.com/snippets/download.php?id=12
