@@ -1,13 +1,16 @@
+%include	/usr/lib/rpm/macros.perl
 Summary:	Dumps grants from a MySQL database as valid SQL
 Name:		mysqldumpgrants
 Version:	1.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications
 Source0:	http://forge.mysql.com/snippets/download.php?id=12
 # Source0-md5:	c556ab1f346698e1994c97e1ae773b4e
 URL:		http://forge.mysql.com/snippets/view.php?id=12
 BuildRequires:	perl-tools-pod
+BuildRequires:	rpm-perlprov >= 4.1-13
+Requires:	perl-DBD-mysql
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
