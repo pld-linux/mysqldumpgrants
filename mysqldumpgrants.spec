@@ -5,7 +5,7 @@ Name:		mysqldumpgrants
 Version:	1.0
 Release:	3
 License:	GPL
-Group:		Applications
+Group:		Applications/Databases/Interfaces
 Source0:	http://forge.mysql.com/snippets/download.php?id=12
 # Source0-md5:	c556ab1f346698e1994c97e1ae773b4e
 URL:		http://forge.mysql.com/snippets/view.php?id=12
