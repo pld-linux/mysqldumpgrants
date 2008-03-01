@@ -1,5 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Dumps grants from a MySQL database as valid SQL
+Summary(pl.UTF-8):	Wyciąganie uprawnień z bazy danych MySQL w postaci poprawnego SQL-a
 Name:		mysqldumpgrants
 Version:	1.0
 Release:	3
@@ -17,6 +18,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 mysqldumpgrants dumps the grants of a MySQL database as valid SQL
 commands.
+
+%description -l pl.UTF-8
+mysqldumpgrants wyciąga informacje o uprawnieniach z bazy danych MySQL
+w postaci poprawnych poleceń SQL.
 
 %prep
 %setup -qcT
