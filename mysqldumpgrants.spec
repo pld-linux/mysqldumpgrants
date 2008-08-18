@@ -6,9 +6,8 @@ Version:	1.0
 Release:	3
 License:	GPL
 Group:		Applications/Databases/Interfaces
-Source0:	http://forge.mysql.com/snippets/download.php?id=12
-# Source0-md5:	c556ab1f346698e1994c97e1ae773b4e
-URL:		http://forge.mysql.com/snippets/view.php?id=12
+Source0:	mysqldumpgrants.pl
+URL:		http://forge.mysql.com/tools/tool.php?id=12
 BuildRequires:	perl-tools-pod
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-DBD-mysql
@@ -25,7 +24,7 @@ w postaci poprawnych poleceń SQL.
 
 %prep
 %setup -qcT
-%{__sed} -e 's,\r$,,' %{SOURCE0} > %{name}
+install %{SOURCE0} %{name}
 
 %build
 pod2man %{name} > %{name}.1
